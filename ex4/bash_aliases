@@ -5,6 +5,13 @@ tfp() {
 tfa() {
     terraform apply $* -var-file="$(terraform workspace show).tfvars"
 }
+# tfa() {
+#     if [ -f ".$(terraform workspace show).protected" ]; then
+#         echo "TERRAFORM OPERATION FORBIDDEN"
+#     else
+#         terraform apply $* -var-file="$(terraform workspace show).tfvars"
+#     fi
+# }
 tfaa() {
     tfa -auto-approve $*
 }

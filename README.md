@@ -8,12 +8,13 @@
     - provider
     - ressource (ressource d'infrastructure et ressource locale → [https://www.terraform.io/docs/language/resources/behavior.html](https://www.terraform.io/docs/language/resources/behavior.html))
     - data-source
-    - module
     - workspace
+    - module
 - terraform vs ansible
     - points communs
         - hashicorp
         - des modules cloud d'ansible permettent de faire la même chose que terraform
+        - idempotence
     - différences
         - déclaratif vs procédural (état final attendu vs succession de tâches)
         - orienté infra/provisionning vs déploiement/configuration
@@ -21,15 +22,9 @@
 
 ## Fonctionnement
 
-- des fichiers .tf
-    
-    exemple d'un fichier simpliste
-    
+- des fichiers `*.tf`
 - pas d'ordre, pas de hiérarchie, on découpe comme on veut
 - tf les lit et construit un arbre de dépendances (voir aussi `depends_on`)
-    
-    exemple de plusieurs ressources liées
-    
 
 ## Les commandes
 
@@ -40,10 +35,13 @@
 
 - `output`
 - définitions simples et plus complexes
+- les fichier `*.tfvars`
 - utilisation de `locals`
+- utilisation d'informations présentes dans d'autres ressources
 
 ## Les workspaces
 
+- comment gérer plusieurs infras similaires avec le même projet 
 - `terraform workspace —help`
 - voir les répertoires
 - utilisation d'aliases

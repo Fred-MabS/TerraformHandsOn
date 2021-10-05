@@ -1,5 +1,5 @@
 * utilisation de workspace
-* utilisation de la ressource liées
+* utilisation d'informations présentes dans d'autres ressources
 
 ```
 source bash_aliases
