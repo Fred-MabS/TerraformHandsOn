@@ -1,0 +1,16 @@
+alias tf=terraform
+tfp() {
+    terraform plan $* -var-file="$(terraform workspace show).tfvars"
+}
+tfa() {
+    terraform apply $* -var-file="$(terraform workspace show).tfvars"
+}
+tfaa() {
+    tfa -auto-approve $*
+}
+tfd() {
+    tfa -destroy $*
+}
+tfda() {
+    tfa -destroy -auto-approve $*
+}
