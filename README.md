@@ -49,3 +49,10 @@
 ## L'import d'une infra existante
 
 ## Les sources de données
+
+- voir le repo pour MAbX/MAbFactory/Auth0
+
+## Autres trucs intéressants
+
+- https://learn.hashicorp.com/tutorials/terraform/expressions?in=terraform/configuration-language#create-a-conditional-for-your-locals-criteria
+- `count`, https://learn.hashicorp.com/tutorials/terraform/expressions?in=terraform/configuration-language#create-a-conditional-count-criteria
