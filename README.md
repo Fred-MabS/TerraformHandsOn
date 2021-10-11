@@ -35,7 +35,7 @@
 
 - `output`
 - définitions simples et plus complexes
-- les fichier `*.tfvars`
+- les fichiers `*.tfvars`
 - utilisation de `locals`
 - utilisation d'informations présentes dans d'autres ressources
 

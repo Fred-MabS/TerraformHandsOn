@@ -5,6 +5,8 @@
 source bash_aliases
 tf init
 tf workspace new ws1
+tf workspace list
+tf workspace show
 tfp
 tfaa
 ```
